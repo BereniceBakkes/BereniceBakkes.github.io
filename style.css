@@ -2898,3 +2898,88 @@ input[type="date"] {
     .section-head { margin-bottom: 32px; }
 }
 .coach-text p.eyebrow-dark { color: var(--soft-coral); font-size: 0.8rem; line-height: 1.2; margin-bottom: 18px; }
+
+/* =========================================================
+   PROGRAM & ABOUT PAGES (Phase 2, October 2026)
+   ========================================================= */
+/* Is this for you? */
+.fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.fit-card { background-color: var(--cream); border-radius: 12px; padding: 40px 36px; }
+.fit-card h3 { font-family: var(--serif); font-weight: 400; color: var(--teal); font-size: 1.6rem; margin-bottom: 20px; }
+.fit-list { list-style: none; padding: 0; margin: 0; }
+.fit-list li {
+    position: relative;
+    padding: 12px 0 12px 34px;
+    border-top: 1px solid var(--sand);
+    color: var(--ink);
+    line-height: 1.6;
+}
+.fit-list li:first-child { border-top: none; }
+.fit-list li::before {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-family: var(--sans);
+    font-weight: 600;
+}
+.fit-list.yes li::before { content: "✓"; color: var(--teal); }
+.fit-list.no li::before { content: "–"; color: var(--terracotta); }
+
+/* Cards on cream sections */
+.how-step.on-sand { background-color: var(--sand); }
+.how-number { font-size: 1.6rem; }
+
+/* What's included */
+.inc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.inc-card { background-color: var(--cream); border-radius: 12px; padding: 28px 24px; }
+.inc-card::before { content: ""; display: block; width: 32px; height: 2px; background: var(--coral); margin-bottom: 18px; }
+.inc-card h3 { font-family: var(--serif); font-weight: 400; color: var(--teal); font-size: 1.3rem; margin-bottom: 10px; }
+.inc-card p { color: var(--muted); line-height: 1.6; font-size: 0.97rem; }
+.inc-card.inc-accent { background-color: var(--teal); }
+.inc-card.inc-accent::before { background: var(--soft-coral); }
+.inc-card.inc-accent h3 { color: var(--cream); }
+.inc-card.inc-accent p { color: rgba(248, 244, 238, 0.85); }
+
+/* How to start / Good to know */
+.start-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.start-grid .how-step h3 { font-size: 1.3rem; }
+
+/* Centred eyebrow & FAQ teaser */
+.centred-eyebrow::after { margin-left: auto; margin-right: auto; }
+.home-inner.narrow .text-link { margin-top: 8px; }
+
+/* Closing teal panel (Program) */
+.closing-panel { grid-template-columns: 1fr; background-color: var(--teal); }
+.closing-text { max-width: 760px; margin: 0 auto; padding: 96px 24px; text-align: center; }
+.closing-text h2 { color: var(--cream); }
+.btn-ghost { background: transparent; color: var(--cream); border: 1px solid rgba(248, 244, 238, 0.5); }
+.btn-ghost:hover { border-color: var(--cream); background: rgba(248, 244, 238, 0.08); }
+
+/* About: story */
+.story-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: start; }
+.story-text p { font-size: 1.1rem; line-height: 1.8; color: var(--ink); margin-bottom: 20px; }
+.story-text p:last-child { margin-bottom: 0; }
+.faith-line {
+    margin: 48px auto 0;
+    max-width: 720px;
+    text-align: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--teal);
+}
+.coach-text p em { font-style: italic; }
+
+@media (max-width: 1000px) {
+    .inc-grid, .start-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+    .fit-grid, .story-grid { grid-template-columns: 1fr; }
+    .story-grid { gap: 8px; }
+    .fit-card { padding: 32px 24px; }
+}
+@media (max-width: 560px) {
+    .inc-grid, .start-grid { grid-template-columns: 1fr; }
+    .closing-text { padding: 64px 20px; }
+}
