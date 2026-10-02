@@ -267,11 +267,11 @@ function submitToGoogleForms() {
     const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdHhfg73LRpx8OR0kXLFtawCSfBRHEc7cBJQOLy2wjm5SmC0g/formResponse';
     const backupFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdDaaJMHSHnGsIMFzrlc4si2QFuGraIBZsXkHKgThe21sb9Kg/formResponse';
 
-    // First, ensure all form data is saved to localStorage
+    // First, ensure all form data is saved to sessionStorage
     saveFormData();
 
-    // Get the saved data from localStorage
-    const savedDataJSON = localStorage.getItem('applicationFormData');
+    // Get the saved data from sessionStorage
+    const savedDataJSON = sessionStorage.getItem('applicationFormData');
     const savedData = savedDataJSON ? JSON.parse(savedDataJSON) : {};
 
     // Log the saved data for debugging
@@ -292,7 +292,7 @@ function submitToGoogleForms() {
         formData.append('entry.569054967', savedData.fullName || '');
         formData.append('entry.1390730019', savedData.contactNumber || '');
         formData.append('entry.1091406177', savedData.dateOfBirth || '');
-        formData.append('entry.1081316312', savedData.gender || '');
+        formData.append('entry.1081316312', savedData.gender || 'Female'); // program is for women; gender question removed from the page
 
         // Page 2 Fields
         // For checkbox fields that accept multiple answers, append each value separately
@@ -417,7 +417,7 @@ function submitToGoogleForms() {
     }).then(() => {
         console.log('=== SUBMISSION SUCCESS ===');
         console.log('Both forms submitted successfully at', new Date().toLocaleString());
-        // Clear localStorage after successful submission
+        // Clear sessionStorage after successful submission
         clearFormData();
         // Show success message
         showSuccessMessage();
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
         currentPage = 1;
         showPage(currentPage);
 
-        // Load saved form data from localStorage
+        // Load saved form data from sessionStorage
         loadFormData();
 
         // Save form data whenever any input changes
@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Save form data to localStorage
+// Save form data to sessionStorage
 function saveFormData() {
     const customForm = document.getElementById('customForm');
     const data = {};
@@ -502,13 +502,13 @@ function saveFormData() {
     });
     Object.assign(data, checkboxGroups);
 
-    // Save to localStorage
-    localStorage.setItem('applicationFormData', JSON.stringify(data));
+    // Save to sessionStorage
+    sessionStorage.setItem('applicationFormData', JSON.stringify(data));
 }
 
-// Load form data from localStorage
+// Load form data from sessionStorage
 function loadFormData() {
-    const savedData = localStorage.getItem('applicationFormData');
+    const savedData = sessionStorage.getItem('applicationFormData');
     if (!savedData) return;
 
     const data = JSON.parse(savedData);
@@ -588,9 +588,9 @@ function validateAllPages() {
     return true;
 }
 
-// Clear form data from localStorage
+// Clear form data from sessionStorage
 function clearFormData() {
-    localStorage.removeItem('applicationFormData');
+    sessionStorage.removeItem('applicationFormData');
 }
 
 function showSuccessMessage() {
@@ -598,10 +598,10 @@ function showSuccessMessage() {
     const successHTML = `
         <div class="success-message">
             <div class="success-content">
-                <p>Thank you for your interest in The Second Half Project.</p>
-                <p>This application helps me understand your current health situation, your goals, and whether this program is the right fit for you.</p>
-                <p>If it is, I will personally contact you to schedule a call and discuss the next steps.</p>
-                <a href="index.html" class="btn btn-primary" style="margin-top: 20px;">Return to Home</a>
+                <h2>Thank you for <em>applying.</em></h2>
+                <p>I've received your application, and I'll read it personally.</p>
+                <p>If it looks like a good fit, I'll contact you on WhatsApp or by email to set up a short call, so we can see if we're a good fit for each other.</p>
+                <a href="index.html" class="btn btn-primary" style="margin-top: 20px;">Back to the home page</a>
             </div>
         </div>
     `;
