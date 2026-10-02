@@ -1,3 +1,6 @@
+/* The Second Half Project — site styles. Brand fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
 /* Global Styles */
 * {
     margin: 0;
@@ -12,9 +15,9 @@ html {
 }
 
 body {
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1F2A28;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -145,7 +148,7 @@ a {
 }
 
 .nav-link {
-    color: #333;
+    color: #1F2A28;
     font-weight: 400;
     transition: all 0.3s ease;
     font-size: 1rem;
@@ -156,15 +159,15 @@ a {
 }
 
 .nav-link:hover {
-    color: #1a7c7d;
+    color: #0F5F53;
     background-color: #fff;
     transform: translateY(-2px);
 }
 
 .nav-link.active {
-    color: #1a7c7d;
-    background-color: rgba(26, 124, 125, 0.12);
-    border-bottom: 2px solid #1a7c7d;
+    color: #0F5F53;
+    background-color: rgba(15, 95, 83, 0.12);
+    border-bottom: 2px solid #0F5F53;
 }
 
 .hamburger {
@@ -181,19 +184,19 @@ a {
 
 .search-box input {
     padding: 10px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #E9E0D4;
     border-radius: 4px;
     width: 200px;
     font-size: 14px;
 }
 
 .search-box input::placeholder {
-    color: #999;
+    color: #5C6663;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
     padding: 100px 20px 100px 20px;
     text-align: center;
 }
@@ -206,10 +209,10 @@ a {
 .hero-content h1 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 20px;
     line-height: 1.2;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -222,10 +225,10 @@ a {
 .hero-content h2 {
     font-size: 2.8rem;
     font-weight: 400;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 20px;
     line-height: 1.35;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     max-width: 800px;
     margin-left: auto;
@@ -245,13 +248,13 @@ a {
 
 .hero-content p {
     font-size: 1.15rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 35px;
     line-height: 1.7;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     opacity: 0;
     transform: translateY(30px);
 }
@@ -264,7 +267,7 @@ a {
 .btn {
     display: inline-block;
     padding: 15px 50px;
-    border-radius: 50px;
+    border-radius: 8px;
     font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -279,39 +282,39 @@ a {
 }
 
 .btn-primary {
-    background-color: #1a7c7d;
+    background-color: #0F5F53;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: #15676a;
+    background-color: #1B4844;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(26, 124, 125, 0.5);
+    box-shadow: 0 6px 16px rgba(15, 95, 83, 0.5);
 }
 
 .btn-primary:active {
     transform: translateY(0);
-    box-shadow: 0 2px 8px rgba(26, 124, 125, 0.3);
+    box-shadow: 0 2px 8px rgba(15, 95, 83, 0.3);
 }
 
 .btn-primary:focus {
-    outline: 2px solid #1a7c7d;
+    outline: 2px solid #0F5F53;
     outline-offset: 2px;
 }
 
 /* Three Pillars Section */
 .pillars {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: #F8F4EE;
 }
 
 .section-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 60px;
-    color: #1a1a1a;
+    color: #1B4844;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
 }
 
@@ -344,12 +347,12 @@ a {
 .pillar h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #0F5F53;
     font-weight: 700;
 }
 
 .pillar p {
-    color: #666;
+    color: #5C6663;
     line-height: 1.8;
     font-size: 1rem;
 }
@@ -362,16 +365,16 @@ a {
 /* Approach Section */
 .approach-section {
     padding: 40px 20px 80px 20px;
-    background-color: #f5f5f5;
+    background-color: #F8F4EE;
 }
 
 .approach-title {
     font-size: 2.8rem;
     text-align: center;
     margin-bottom: 35px;
-    color: #2c3e50;
+    color: #0F5F53;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -393,7 +396,7 @@ a {
 
 .approach-card {
     text-align: center;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #E9E0D4;
     padding: 40px 30px;
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -411,29 +414,29 @@ a {
 
 .approach-card:hover {
     background-color: #fff;
-    box-shadow: 0 12px 28px rgba(26, 124, 125, 0.15);
+    box-shadow: 0 12px 28px rgba(15, 95, 83, 0.15);
     transform: translateY(-8px);
-    border-color: #1a7c7d;
+    border-color: #0F5F53;
 }
 
 .approach-card h3 {
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 20px;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
 }
 
 .approach-card:hover h3 {
-    color: #1a7c7d;
+    color: #0F5F53;
 }
 
 .approach-card p {
     font-size: 1rem;
-    color: #666;
+    color: #5C6663;
     line-height: 1.8;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     flex: 1;
     display: flex;
     align-items: center;
@@ -460,16 +463,16 @@ a {
 /* Why Section */
 .why-section {
     padding: 40px 20px 80px 20px;
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
     text-align: center;
 }
 
 .why-title {
     font-size: 2.8rem;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 20px;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -481,13 +484,13 @@ a {
 
 .why-description {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 30px;
     line-height: 1.8;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     opacity: 0;
     transform: translateY(30px);
 }
@@ -498,10 +501,10 @@ a {
 
 .why-highlight {
     font-size: 2rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     font-weight: 400;
     line-height: 1.8;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     margin-bottom: 30px;
     opacity: 0;
     transform: translateY(30px);
@@ -523,7 +526,7 @@ a {
 /* About Section */
 .about-section {
     padding: 40px 20px 60px 20px;
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,11 +534,11 @@ a {
 
 .about-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 45px;
     font-weight: 400;
     text-align: left;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     margin-left: 490px;
     opacity: 0;
@@ -581,11 +584,11 @@ a {
 
 .coach-name {
     font-size: 1.1rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     opacity: 0;
     transform: translateY(30px);
 }
@@ -606,10 +609,10 @@ a {
 
 .about-content p {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 30px;
     line-height: 1.8;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .about-content p:not(:first-child) {
@@ -627,7 +630,7 @@ a {
 /* Who Section */
 .who-section {
     padding: 30px 20px 80px 20px;
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
 }
 
 .who-section .container {
@@ -638,12 +641,12 @@ a {
 
 .who-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 30px;
     font-weight: 400;
     text-align: center;
     width: 100%;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -655,12 +658,12 @@ a {
 
 .who-intro {
     font-size: 1.3rem;
-    color: #333;
+    color: #1F2A28;
     margin-bottom: 25px;
     text-align: center;
     font-weight: 400;
     width: 100%;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     opacity: 0;
 }
 
@@ -693,32 +696,32 @@ a {
 
 .who-list li {
     font-size: 1.15rem;
-    color: #333;
+    color: #1F2A28;
     padding-left: 0;
     position: relative;
     line-height: 1.6;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .who-list li:before {
     content: "";
     position: absolute;
     left: 0;
-    color: #1a7c7d;
+    color: #0F5F53;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .who-benefit {
     font-size: 1.15rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 50px;
     text-align: center;
     line-height: 1.8;
     max-width: 1000px;
     width: 100%;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .who-cta {
@@ -733,7 +736,7 @@ a {
 /* Philosophy Section */
 .philosophy-section {
     padding: 80px 20px;
-    background-color: #f5f5f5;
+    background-color: #F8F4EE;
 }
 
 .philosophy-section .container {
@@ -742,11 +745,11 @@ a {
 
 .philosophy-title {
     font-size: 2.8rem;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 45px;
     font-weight: 400;
     text-align: center;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -769,10 +772,10 @@ a {
 
 .philosophy-content p {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 30px;
     line-height: 1.8;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .philosophy-principles {
@@ -804,23 +807,23 @@ a {
 
 .principle h3 {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 15px;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
 }
 
 .principle p {
     font-size: 1rem;
-    color: #666;
+    color: #5C6663;
     line-height: 1.8;
 }
 
 /* Program Section */
 .program-section {
     padding: 80px 20px;
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
 }
 
 .program-section .container {
@@ -831,11 +834,11 @@ a {
 
 .program-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 45px;
     font-weight: 400;
     text-align: center;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -863,10 +866,10 @@ a {
 
 .program-content p {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 30px;
     line-height: 1.8;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .program-content p:last-child {
@@ -895,7 +898,7 @@ a {
 /* Included Section */
 .included-section {
     padding: 15px 20px;
-    background-color: #f5f5f5;
+    background-color: #F8F4EE;
 }
 
 .included-section .container {
@@ -906,13 +909,13 @@ a {
 
 .included-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     padding: 20px 20px;
     margin-bottom: 30px;
     font-weight: 400;
     text-align: center;
     width: 100%;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -947,11 +950,11 @@ a {
 
 .included-list li {
     font-size: 1.1rem;
-    color: #2c3e50;
+    color: #0F5F53;
     position: relative;
     line-height: 1.8;
     font-weight: 600;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     opacity: 0;
     transform: translateY(30px);
 }
@@ -963,7 +966,7 @@ a {
 .included-list li:before {
     position: absolute;
     left: 0;
-    color: #1a7c7d;
+    color: #0F5F53;
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -971,7 +974,7 @@ a {
 /* FAQ Section */
 .faq-section {
     padding: 15px 20px;
-    background-color: #f5f5f5;
+    background-color: #F8F4EE;
 }
 
 .faq-section .container {
@@ -982,12 +985,12 @@ a {
 
 .faq-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 30px;
     font-weight: 400;
     text-align: center;
     width: 100%;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -1009,9 +1012,9 @@ a {
 
 .faq-item {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #E9E0D4;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #F8F4EE;
     overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
@@ -1024,7 +1027,7 @@ a {
 .faq-header {
     width: 100%;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #F8F4EE;
     border: none;
     cursor: pointer;
     display: flex;
@@ -1035,11 +1038,11 @@ a {
 }
 
 .faq-header:hover {
-    background-color: #f0f0f0;
+    background-color: #F8F4EE;
 }
 
 .faq-icon {
-    color: #1a7c7d;
+    color: #0F5F53;
     font-size: 1.5rem;
     font-weight: bold;
     min-width: 20px;
@@ -1048,11 +1051,11 @@ a {
 }
 
 .faq-question {
-    color: #1a7c7d;
+    color: #0F5F53;
     font-size: 1.05rem;
     font-weight: 400;
     margin: 0;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .faq-content {
@@ -1067,17 +1070,17 @@ a {
 
 .faq-content p {
     padding: 0 20px 20px 20px;
-    color: #555;
+    color: #5C6663;
     font-size: 1rem;
     line-height: 1.8;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Program CTA Section */
 .program-cta-section {
     padding: 60px 20px;
-    background-color: #f5f5f5;
+    background-color: #F8F4EE;
     text-align: center;
 }
 
@@ -1088,7 +1091,7 @@ a {
 /* Apply Section */
 .apply-section {
     padding: 30px 20px 80px 20px;
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1097,11 +1100,11 @@ a {
 
 .apply-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 45px;
     font-weight: 400;
     text-align: center;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -1126,19 +1129,19 @@ a {
 
 .apply-intro {
     font-size: 1.2rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 20px;
     line-height: 1.8;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     font-weight: 500;
 }
 
 .apply-tagline {
     font-size: 1.2rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 50px;
     line-height: 1.8;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     font-weight: 500;
 }
 
@@ -1175,10 +1178,10 @@ a {
 
 .apply-info p {
     font-size: 1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 15px;
     line-height: 1.8;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .apply-info p:last-child {
@@ -1188,7 +1191,7 @@ a {
 /* Contact Section */
 .contact-section {
     padding: 30px 20px 80px 20px;
-    background-color: #e8e8e8;
+    background-color: #E9E0D4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1196,11 +1199,11 @@ a {
 
 .contact-title {
     font-size: 2.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 20px;
     font-weight: 400;
     text-align: center;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(-30px);
@@ -1212,14 +1215,14 @@ a {
 
 .contact-intro {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 8px;
     text-align: center;
     line-height: 1.8;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .contact-intro:last-of-type {
@@ -1240,7 +1243,7 @@ a {
 .contact-card {
     text-align: center;
     padding: 40px 30px;
-    border: 2px solid #2c3e50;
+    border: 2px solid #0F5F53;
     border-radius: 8px;
     background-color: #fff;
     transition: all 0.3s ease;
@@ -1262,7 +1265,7 @@ a {
     background-color: transparent;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
-    border-color: #1a7c7d;
+    border-color: #0F5F53;
 }
 
 .contact-icon-wrapper {
@@ -1271,38 +1274,38 @@ a {
     justify-content: center;
     width: 80px;
     height: 80px;
-    background-color: rgba(26, 124, 125, 0.1);
+    background-color: rgba(15, 95, 83, 0.1);
     border-radius: 50%;
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
 
 .contact-card:hover .contact-icon-wrapper {
-    background-color: rgba(26, 124, 125, 0.2);
+    background-color: rgba(15, 95, 83, 0.2);
     transform: scale(1.1);
 }
 
 .contact-icon {
     width: 40px;
     height: 40px;
-    color: #1a7c7d;
+    color: #0F5F53;
 }
 
 .contact-card h3 {
     font-size: 1.4rem;
-    color: #2c3e50;
+    color: #0F5F53;
     margin-bottom: 15px;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
 }
 
 .contact-card:hover h3 {
-    color: #1a7c7d;
+    color: #0F5F53;
 }
 
 .contact-link {
-    color: #1a7c7d;
+    color: #0F5F53;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1311,11 +1314,11 @@ a {
 
 .contact-card:hover .contact-link {
     text-decoration: underline;
-    color: #15676a;
+    color: #1B4844;
 }
 
 .contact-text {
-    color: #555;
+    color: #5C6663;
     font-size: 1.05rem;
     line-height: 1.6;
 }
@@ -1323,7 +1326,7 @@ a {
 .contact-note {
     text-align: center;
     padding: 30px;
-    background-color: rgba(26, 124, 125, 0.08);
+    background-color: rgba(15, 95, 83, 0.08);
     border-radius: 8px;
     max-width: 800px;
     margin-left: auto;
@@ -1331,7 +1334,7 @@ a {
 }
 
 .contact-note p {
-    color: #555;
+    color: #5C6663;
     font-size: 1rem;
     line-height: 1.8;
     margin: 0;
@@ -1347,13 +1350,13 @@ a {
 .approach h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #1a1a1a;
+    color: #1B4844;
     font-weight: 700;
 }
 
 .approach p {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     margin-bottom: 20px;
     line-height: 1.8;
     max-width: 800px;
@@ -1364,13 +1367,13 @@ a {
 .approach p.highlight {
     font-weight: 600;
     font-size: 1.2rem;
-    color: #007bff;
+    color: #0F5F53;
     margin-top: 30px;
 }
 
 /* Footer */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #1B4844;
     color: #fff;
     padding: 45px 20px 20px;
     flex-shrink: 0;
@@ -1404,11 +1407,11 @@ a {
 }
 
 .footer-section p {
-    color: #ddd;
+    color: #E9E0D4;
 }
 
 .footer-section a {
-    color: #ddd;
+    color: #E9E0D4;
     transition: color 0.3s ease;
 }
 
@@ -1422,12 +1425,12 @@ a {
     justify-content: center;
     width: 50px;
     height: 50px;
-    color: #ddd;
+    color: #E9E0D4;
     transition: all 0.3s ease;
 }
 
 .footer-icon-link:hover {
-    color: #1a7c7d;
+    color: #0F5F53;
     transform: scale(1.1);
 }
 
@@ -1439,20 +1442,20 @@ a {
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #333;
-    color: #999;
+    border-top: 1px solid #1F2A28;
+    color: #5C6663;
     font-size: 0.9rem;
 }
 
 .footer-bottom a {
-    color: #1a7c7d;
+    color: #0F5F53;
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 600;
 }
 
 .footer-bottom a:hover {
-    color: #1a7c7d;
+    color: #0F5F53;
     text-decoration: underline;
 }
 
@@ -1470,7 +1473,7 @@ a {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #1F2A28;
     margin: 5px 0;
     transition: all 0.3s ease;
     border-radius: 2px;
@@ -1497,7 +1500,7 @@ a {
 .current-page {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1a7c7d;
+    color: #0F5F53;
     white-space: nowrap;
 }
 
@@ -1544,7 +1547,7 @@ a {
         gap: 0;
         justify-content: flex-start;
         align-items: stretch;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #E9E0D4;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
@@ -1559,7 +1562,7 @@ a {
         font-size: 1rem;
         padding: 15px 20px;
         border-radius: 0;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #E9E0D4;
         display: block;
         text-align: left;
         transition: background-color 0.3s ease;
@@ -1567,13 +1570,13 @@ a {
     }
 
     .nav-link:hover {
-        background-color: rgba(26, 124, 125, 0.05);
+        background-color: rgba(15, 95, 83, 0.05);
         transform: none;
     }
 
     .nav-link.active {
-        background-color: rgba(26, 124, 125, 0.12);
-        border-left: 4px solid #1a7c7d;
+        background-color: rgba(15, 95, 83, 0.12);
+        border-left: 4px solid #0F5F53;
         padding-left: 16px;
     }
 
@@ -1882,7 +1885,7 @@ a {
 
 /* Progress Tracker */
 .progress-tracker {
-    background: linear-gradient(135deg, rgba(26, 124, 125, 0.05) 0%, rgba(26, 124, 125, 0.02) 100%);
+    background: linear-gradient(135deg, rgba(15, 95, 83, 0.05) 0%, rgba(15, 95, 83, 0.02) 100%);
     padding: 20px 15px;
     margin-bottom: 0;
 }
@@ -1890,7 +1893,7 @@ a {
 .progress-bar-container {
     width: 100%;
     height: 6px;
-    background: #e0e0e0;
+    background: #E9E0D4;
     border-radius: 10px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -1898,7 +1901,7 @@ a {
 
 .progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, #1a7c7d 0%, #15676a 100%);
+    background: linear-gradient(90deg, #0F5F53 0%, #1B4844 100%);
     border-radius: 10px;
     transition: width 0.3s ease;
     width: 25%;
@@ -1920,7 +1923,7 @@ a {
 
 .step:hover .step-number {
     transform: scale(1.1);
-    box-shadow: 0 6px 16px rgba(26, 124, 125, 0.4);
+    box-shadow: 0 6px 16px rgba(15, 95, 83, 0.4);
 }
 
 .step-number {
@@ -1930,30 +1933,30 @@ a {
     width: 40px;
     height: 40px;
     margin: 0 auto 8px;
-    background: #e0e0e0;
+    background: #E9E0D4;
     border-radius: 50%;
     font-weight: 600;
     font-size: 1rem;
-    color: #666;
+    color: #5C6663;
     transition: all 0.3s ease;
 }
 
 .step.active .step-number {
-    background: #1a7c7d;
+    background: #0F5F53;
     color: #fff;
-    box-shadow: 0 4px 12px rgba(26, 124, 125, 0.3);
+    box-shadow: 0 4px 12px rgba(15, 95, 83, 0.3);
 }
 
 .step-label {
     font-size: 0.8rem;
-    color: #666;
+    color: #5C6663;
     font-weight: 500;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     transition: all 0.3s ease;
 }
 
 .step.active .step-label {
-    color: #1a7c7d;
+    color: #0F5F53;
     font-weight: 600;
 }
 
@@ -1973,36 +1976,36 @@ a {
 
 .form-page h2 {
     font-size: 1.8rem;
-    color: #1a7c7d;
+    color: #0F5F53;
     margin-bottom: 30px;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     letter-spacing: -0.5px;
 }
 
 .submission-intro {
     font-size: 1.1rem;
-    color: #555;
+    color: #5C6663;
     text-align: center;
     margin-bottom: 25px;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.8;
 }
 
 .review-summary {
-    background: rgba(26, 124, 125, 0.05);
-    border-left: 4px solid #1a7c7d;
+    background: rgba(15, 95, 83, 0.05);
+    border-left: 4px solid #0F5F53;
     padding: 20px;
     border-radius: 6px;
     margin-bottom: 30px;
 }
 
 .review-summary p {
-    color: #555;
+    color: #5C6663;
     font-size: 1rem;
     margin: 0;
     line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Form Groups */
@@ -2013,10 +2016,10 @@ a {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #1F2A28;
     font-weight: 500;
     font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
     text-align: left;
 }
 
@@ -2028,7 +2031,7 @@ a {
 .form-group select {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #E9E0D4;
     border-radius: 6px;
     font-size: 1rem;
     font-family: inherit;
@@ -2040,13 +2043,13 @@ a {
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #1a7c7d;
-    box-shadow: 0 0 0 3px rgba(26, 124, 125, 0.1);
+    border-color: #0F5F53;
+    box-shadow: 0 0 0 3px rgba(15, 95, 83, 0.1);
 }
 
 .form-group textarea {
     resize: vertical;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .form-group.checkbox {
@@ -2080,14 +2083,14 @@ a {
 }
 
 .btn-secondary {
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ddd;
+    background-color: #F8F4EE;
+    color: #1F2A28;
+    border: 1px solid #E9E0D4;
 }
 
 .btn-secondary:hover {
-    background-color: #e0e0e0;
-    border-color: #999;
+    background-color: #E9E0D4;
+    border-color: #5C6663;
 }
 
 #prevBtn {
@@ -2101,49 +2104,49 @@ a {
 }
 
 #submitBtn {
-    background-color: #1a7c7d;
+    background-color: #0F5F53;
     color: #fff;
 }
 
 #submitBtn:hover {
-    background-color: #15676a;
+    background-color: #1B4844;
 }
 
 /* Success Message */
 .success-message {
     padding: 60px 40px;
     text-align: center;
-    background: linear-gradient(135deg, rgba(26, 124, 125, 0.05) 0%, rgba(26, 124, 125, 0.02) 100%);
+    background: linear-gradient(135deg, rgba(15, 95, 83, 0.05) 0%, rgba(15, 95, 83, 0.02) 100%);
 }
 
 .success-content h2 {
-    color: #1a7c7d;
+    color: #0F5F53;
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 400;
-    font-family: 'Georgia', 'Garamond', serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .success-content p {
-    color: #555;
+    color: #5C6663;
     font-size: 1.05rem;
     margin-bottom: 15px;
     line-height: 1.8;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Form Error States */
 .form-group input.error,
 .form-group textarea.error,
 .form-group select.error {
-    border-color: #dc3545;
-    background-color: rgba(220, 53, 69, 0.05);
+    border-color: #A8503A;
+    background-color: rgba(168, 80, 58, 0.05);
 }
 
 .form-group input.error:focus,
 .form-group textarea.error:focus,
 .form-group select.error:focus {
-    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+    box-shadow: 0 0 0 3px rgba(168, 80, 58, 0.1);
 }
 
 /* Radio and Checkbox Groups */
@@ -2168,7 +2171,7 @@ a {
     height: 18px;
     cursor: pointer;
     flex-shrink: 0;
-    accent-color: #1a7c7d;
+    accent-color: #0F5F53;
     transition: all 0.2s ease;
 }
 
@@ -2178,20 +2181,20 @@ a {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
-    color: #333;
+    color: #1F2A28;
 }
 
 /* Error states for radio buttons and checkboxes */
 .radio-option input[type="radio"].error,
 .checkbox-option input[type="checkbox"].error {
-    accent-color: #dc3545;
-    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.3);
+    accent-color: #A8503A;
+    box-shadow: 0 0 0 2px rgba(168, 80, 58, 0.3);
     border-radius: 2px;
 }
 
 .radio-option input[type="radio"].error:focus,
 .checkbox-option input[type="checkbox"].error:focus {
-    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
+    box-shadow: 0 0 0 3px rgba(168, 80, 58, 0.4);
 }
 
 /* Scale Group (1-10) */
@@ -2213,27 +2216,27 @@ a {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    accent-color: #1a7c7d;
+    accent-color: #0F5F53;
     transition: all 0.2s ease;
 }
 
 .scale-option label {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #333;
+    color: #1F2A28;
     cursor: pointer;
     margin: 0;
 }
 
 /* Error state for scale options */
 .scale-option input[type="radio"].error {
-    accent-color: #dc3545;
-    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.3);
+    accent-color: #A8503A;
+    box-shadow: 0 0 0 2px rgba(168, 80, 58, 0.3);
     border-radius: 2px;
 }
 
 .scale-option input[type="radio"].error:focus {
-    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
+    box-shadow: 0 0 0 3px rgba(168, 80, 58, 0.4);
 }
 
 /* Disclaimer Text */
@@ -2243,13 +2246,13 @@ a {
 }
 
 .disclaimer-text {
-    background-color: #f5f5f5;
-    border-left: 4px solid #0066cc;
+    background-color: #F8F4EE;
+    border-left: 4px solid #A8503A;
     padding: 12px;
     margin: 10px 0;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #333;
+    color: #1F2A28;
     border-radius: 2px;
     text-align: left;
 }
@@ -2264,11 +2267,11 @@ a {
 /* Modern Date Input Styling */
 input[type="date"] {
     padding: 12px 16px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #E9E0D4;
     border-radius: 8px;
     font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: #333;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+    color: #1F2A28;
     background-color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2282,14 +2285,14 @@ input[type="date"] {
 }
 
 input[type="date"]:hover {
-    border-color: #1a7c7d;
-    box-shadow: 0 2px 8px rgba(26, 124, 125, 0.1);
+    border-color: #0F5F53;
+    box-shadow: 0 2px 8px rgba(15, 95, 83, 0.1);
 }
 
 input[type="date"]:focus {
     outline: none;
-    border-color: #1a7c7d;
-    box-shadow: 0 0 0 3px rgba(26, 124, 125, 0.15);
+    border-color: #0F5F53;
+    box-shadow: 0 0 0 3px rgba(15, 95, 83, 0.15);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -2421,13 +2424,13 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     }
 
     .disclaimer-text {
-        background-color: #f5f5f5;
-        border-left: 4px solid #0066cc;
+        background-color: #F8F4EE;
+        border-left: 4px solid #A8503A;
         padding: 12px;
         margin: 10px 0;
         font-size: 0.85rem;
         line-height: 1.6;
-        color: #333;
+        color: #1F2A28;
         border-radius: 2px;
     }
 
@@ -2449,4 +2452,249 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
         font-size: 0.95rem;
         margin-bottom: 30px;
     }
+}
+
+/* =========================================================
+   BRAND LAYER — The Second Half Project (October 2026)
+   Teal & Coral palette · Playfair Display + Inter
+   Everything below overrides the older styles above.
+   ========================================================= */
+:root {
+    --teal: #0F5F53;
+    --forest: #1B4844;
+    --cream: #F8F4EE;
+    --sand: #E9E0D4;
+    --coral: #E07A5F;
+    --soft-coral: #F2B8A2;
+    --terracotta: #A8503A;
+    --ink: #1F2A28;
+    --muted: #5C6663;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background-color: var(--cream);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3,
+.hero-content h2, .approach-title, .approach-card h3, .why-title, .why-highlight,
+.about-title, .who-title, .philosophy-title, .principle h3, .program-title,
+.included-title, .faq-title, .apply-title, .contact-title, .contact-card h3,
+.form-page h2, .success-content h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--teal);
+    letter-spacing: 0;
+    text-shadow: none;
+}
+
+em, i { font-style: italic; }
+
+p, li, label, input, select, textarea, button, .btn, .nav-link, .faq-question {
+    font-family: var(--sans);
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+    background-color: rgba(248, 244, 238, 0.96);
+    box-shadow: none;
+    border-bottom: 1px solid var(--sand);
+    backdrop-filter: saturate(1.2) blur(6px);
+}
+.nav-container { padding: 14px 24px; }
+.logo img { height: 56px; width: auto; }
+.nav-menu { gap: 8px; }
+.nav-link {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 10px 12px;
+    border-radius: 0;
+}
+.nav-link:hover { color: var(--teal); background: none; transform: none; }
+.nav-link.active {
+    color: var(--teal);
+    background: none;
+    border-bottom: 2px solid var(--coral);
+}
+.hamburger span { background-color: var(--teal); }
+.current-page {
+    color: var(--teal);
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    letter-spacing: 0;
+}
+.btn-primary { background-color: var(--forest); color: var(--cream); }
+.btn-primary:hover { background-color: var(--teal); box-shadow: none; transform: translateY(-1px); }
+.btn-primary:focus { outline: 2px solid var(--coral); outline-offset: 3px; }
+.btn-secondary, .btn-outline {
+    background-color: var(--sand);
+    color: var(--teal);
+    border: none;
+}
+.btn-secondary:hover, .btn-outline:hover { background-color: var(--sand); color: var(--forest); filter: brightness(0.96); }
+
+/* ---------- Hero (headline left, photo right) ---------- */
+.hero {
+    background-color: var(--cream);
+    padding: 72px 24px 88px;
+    text-align: left;
+}
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+}
+.hero-content { max-width: none; margin: 0; }
+.hero-content h2 {
+    font-size: clamp(2.5rem, 5vw, 4.4rem);
+    line-height: 1.08;
+    margin: 0 0 28px;
+    max-width: 640px;
+}
+.hero-content h2 em { font-style: italic; }
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin: 0 0 36px;
+    max-width: 520px;
+}
+.hero-content p.hero-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 22px;
+}
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 12px;
+}
+
+/* ---------- Home: "Modern life" cards ---------- */
+.approach-section { background-color: var(--sand); padding: 88px 24px; }
+.approach-title { font-size: clamp(2rem, 3.6vw, 2.8rem); margin-bottom: 48px; }
+.approach-grid { gap: 28px; }
+.approach-card {
+    text-align: left;
+    background-color: var(--cream);
+    border: none;
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 36px 32px;
+}
+.approach-card:hover { transform: none; box-shadow: none; border: none; background-color: var(--cream); }
+.approach-card:hover h3 { color: var(--teal); }
+.approach-card h3 { font-size: 1.6rem; margin-bottom: 14px; }
+.approach-card h3::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 2px;
+    background: var(--coral);
+    margin-bottom: 20px;
+}
+.approach-card p { color: var(--muted); justify-content: flex-start; align-items: flex-start; font-family: var(--sans); }
+.approach-icon { display: none; }
+
+/* ---------- Home: "A different way of living" (teal panel) ---------- */
+.why-section { background-color: var(--teal); padding: 96px 24px; }
+.why-title { color: var(--cream); }
+.why-description { color: rgba(248, 244, 238, 0.85); font-family: var(--sans); }
+.why-highlight { color: var(--soft-coral); font-style: italic; }
+.why-section .btn-primary { background-color: var(--cream); color: var(--forest); }
+.why-section .btn-primary:hover { background-color: var(--sand); }
+
+/* ---------- Inner pages: backgrounds & text ---------- */
+.about-section, .who-section, .philosophy-section, .program-section, .included-section,
+.faq-section, .apply-section, .contact-section, .program-cta-section {
+    background-color: var(--cream);
+}
+.philosophy-section, .included-section { background-color: var(--sand); }
+.about-content p, .program-content p, .philosophy-content p, .who-intro, .faq-content p,
+.contact-intro, .contact-text, .apply-intro, .apply-info p, .included-list li, .who-list li {
+    color: var(--ink);
+    font-family: var(--sans);
+}
+.about-image img, .program-image img { border-radius: 12px; }
+.coach-name { font-family: var(--sans); font-weight: 500; letter-spacing: 0.15em; color: var(--terracotta); font-size: 0.85rem; }
+.approach-card, .principle, .contact-card, .faq-item { border-radius: 12px; }
+.principle, .contact-card { background-color: var(--cream); border-color: var(--sand); box-shadow: none; }
+.contact-card:hover, .principle:hover { box-shadow: none; transform: translateY(-2px); border-color: var(--teal); }
+.contact-icon-wrapper { background-color: var(--sand); color: var(--teal); }
+.faq-item { background-color: #fff; border: 1px solid var(--sand); box-shadow: none; }
+.faq-header:hover { background-color: var(--cream); }
+
+/* ---------- Forms ---------- */
+.form-container { background-color: #fff; border: 1px solid var(--sand); border-radius: 12px; box-shadow: none; }
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"],
+.form-group input[type="number"], .form-group input[type="date"], .form-group select, .form-group textarea,
+input[type="date"] {
+    border: 1px solid rgba(92, 102, 99, 0.45);
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: var(--sans);
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--teal);
+    outline: 2px solid rgba(15, 95, 83, 0.15);
+}
+.progress-bar { background-color: var(--teal); }
+.step.active .step-number { background-color: var(--teal); border-color: var(--teal); color: var(--cream); }
+
+/* ---------- Footer ---------- */
+.footer { background-color: var(--sand); color: var(--ink); padding: 48px 24px 24px; }
+.footer-logo img { height: 52px; width: auto; }
+.footer-icon-link { color: var(--teal); }
+.footer-icon-link:hover { color: var(--forest); transform: none; }
+.footer-bottom { border-top: 1px solid rgba(15, 95, 83, 0.15); color: var(--muted); }
+.footer-bottom a { color: var(--teal); font-weight: 500; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero-image img { aspect-ratio: 4 / 4.4; max-height: 520px; }
+}
+@media (max-width: 768px) {
+    .logo img { height: 36px; }
+    .nav-mobile-right { gap: 14px; align-items: center; }
+    .nav-menu { background-color: var(--cream); border-top: 1px solid var(--sand); }
+    .nav-link { font-size: 0.85rem; border-bottom: 1px solid var(--sand); padding: 16px 20px; }
+    .nav-link.active { border-left: 3px solid var(--coral); border-bottom: 1px solid var(--sand); padding-left: 17px; }
+    .hero { padding: 40px 20px 64px; }
+    .hero-content h2 { font-size: 2.4rem; }
+    .hero-content p { font-size: 1.05rem; }
+    .btn { padding: 14px 24px; }
+    .approach-section, .why-section { padding: 64px 20px; }
+    .footer-content { flex-wrap: wrap; gap: 12px; }
+    .footer-logo { width: 100%; margin-bottom: 8px; }
 }
