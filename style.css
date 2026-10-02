@@ -3151,3 +3151,42 @@ a.contact-row.primary:hover { background-color: var(--teal); }
 .legal-text li::marker { color: var(--coral); }
 .legal-text a { color: var(--terracotta); text-decoration: underline; text-underline-offset: 3px; }
 .legal-text strong { font-weight: 600; }
+
+
+/* =========================================================
+   GENTLE SLIDE-UP FOR NEW SECTIONS (same as the original pages)
+   ========================================================= */
+.hero-image, .section-head, .gap-card, .how-step, .fit-card, .inc-card,
+.offer-text, .offer-price, .coach-photo, .coach-text, .story-head, .story-text,
+.faith-line, .approach-close, .testimonial, .how-note, .section-cta,
+.home-closing .home-inner, .page-head .home-inner, .faq-group, .contact-row, .contact-hours, .legal-text {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.hero-image.animate-in, .section-head.animate-in, .gap-card.animate-in, .how-step.animate-in,
+.fit-card.animate-in, .inc-card.animate-in, .offer-text.animate-in, .offer-price.animate-in,
+.coach-photo.animate-in, .coach-text.animate-in, .story-head.animate-in, .story-text.animate-in,
+.faith-line.animate-in, .approach-close.animate-in, .testimonial.animate-in, .how-note.animate-in,
+.section-cta.animate-in, .home-closing .home-inner.animate-in, .page-head .home-inner.animate-in,
+.faq-group.animate-in, .contact-row.animate-in, .contact-hours.animate-in, .legal-text.animate-in {
+    animation: slideInUp 0.8s ease-out forwards;
+}
+.coach-photo { transform: none; }
+.coach-photo.animate-in { animation: fadeIn 1s ease-out forwards; }
+.hero-image.animate-in { animation-delay: 0.2s; }
+.offer-price.animate-in, .coach-text.animate-in, .story-text.animate-in { animation-delay: 0.15s; }
+
+/* Cards in a row arrive one after another */
+.gap-card:nth-child(2).animate-in, .how-step:nth-child(2).animate-in, .fit-card:nth-child(2).animate-in,
+.inc-card:nth-child(4n+2).animate-in, .contact-row:nth-child(2).animate-in { animation-delay: 0.12s; }
+.gap-card:nth-child(3).animate-in, .how-step:nth-child(3).animate-in,
+.inc-card:nth-child(4n+3).animate-in, .contact-row:nth-child(3).animate-in { animation-delay: 0.24s; }
+.how-step:nth-child(4).animate-in, .inc-card:nth-child(4n+4).animate-in, .contact-row:nth-child(4).animate-in { animation-delay: 0.36s; }
+.contact-row:nth-child(n+5).animate-in { animation-delay: 0.45s; }
+
+/* Respect "reduce motion" settings: show everything straight away */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .hero-content h1, .hero-content h2, .hero-content p, .btn, .approach-card, .approach-icon, .approach-title, .pillar, .principle, .about-wrapper, .about-title, .about-image, .about-content, .coach-name, .program-title, .program-content, .program-image, .included-title, .included-list li, .faq-title, .faq-container, .faq-item, .who-title, .who-intro, .philosophy-title, .philosophy-content, .why-title, .why-description, .why-highlight, .apply-title, .apply-content, .google-form-container, .contact-title, .contact-card,
+    .hero-image, .section-head, .gap-card, .how-step, .fit-card, .inc-card, .offer-text, .offer-price, .coach-photo, .coach-text, .story-head, .story-text, .faith-line, .approach-close, .testimonial, .how-note, .section-cta, .home-closing .home-inner, .page-head .home-inner, .faq-group, .contact-row, .contact-hours, .legal-text { opacity: 1 !important; transform: none !important; }
+}

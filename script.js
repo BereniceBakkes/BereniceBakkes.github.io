@@ -75,7 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
         '.philosophy-title, .philosophy-content, ' +
         '.why-title, .why-description, .why-highlight, ' +
         '.apply-title, .apply-content, .google-form-container, ' +
-        '.contact-title, .contact-card'
+        '.contact-title, .contact-card, ' +
+        // New sections (October 2026): same gentle slide-up
+        '.hero-image, .section-head, .gap-card, .how-step, .fit-card, .inc-card, ' +
+        '.offer-text, .offer-price, .coach-photo, .coach-text, .story-head, .story-text, ' +
+        '.faith-line, .approach-close, .testimonial, .how-note, .section-cta, ' +
+        '.home-closing .home-inner, .page-head .home-inner, .faq-group, .contact-row, .contact-hours, .legal-text'
     );
 
     animatedElements.forEach(element => {
@@ -600,7 +605,7 @@ function showSuccessMessage() {
             <div class="success-content">
                 <h2>Thank you for <em>applying.</em></h2>
                 <p>I've received your application, and I'll read it personally.</p>
-                <p>If it looks like a good fit, I'll contact you on WhatsApp or by email to set up a short call, so we can see if we're a good fit for each other.</p>
+                <p>I'll contact you on WhatsApp or by email to set up a short call.</p>
                 <a href="index.html" class="btn btn-primary" style="margin-top: 20px;">Back to the home page</a>
             </div>
         </div>
