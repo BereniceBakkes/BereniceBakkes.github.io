@@ -2698,3 +2698,203 @@ input[type="date"] {
     .footer-content { flex-wrap: wrap; gap: 12px; }
     .footer-logo { width: 100%; margin-bottom: 8px; }
 }
+
+/* =========================================================
+   HOME PAGE SECTIONS (Phase 2, October 2026)
+   ========================================================= */
+.hero-content h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--teal);
+    font-size: clamp(2.5rem, 5vw, 4.4rem);
+    line-height: 1.08;
+    letter-spacing: 0;
+    margin: 0 0 28px;
+    max-width: 640px;
+}
+.hero-content h1 em { font-style: italic; }
+
+.home-section { background-color: var(--cream); padding: 96px 24px; }
+.home-sand { background-color: var(--sand); }
+.home-inner { max-width: 1120px; margin: 0 auto; }
+.home-inner.narrow { max-width: 760px; text-align: center; }
+
+.eyebrow {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 18px;
+}
+.eyebrow::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 1px;
+    background: var(--coral);
+    margin-top: 14px;
+}
+.eyebrow-dark { color: var(--soft-coral); }
+.eyebrow-dark::after { background: var(--soft-coral); opacity: 0.6; }
+
+.section-head { max-width: 720px; margin-bottom: 48px; }
+.home-section h2, .coach-text h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--teal);
+    font-size: clamp(2rem, 3.6vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+.lead { font-size: 1.15rem; line-height: 1.7; color: var(--ink); margin-bottom: 16px; }
+.lead:last-child { margin-bottom: 0; }
+
+/* "You didn't fail" — three gaps */
+.gap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.gap-card {
+    background-color: var(--sand);
+    border-radius: 12px;
+    padding: 32px 28px;
+}
+.gap-card .gap-quote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    color: var(--teal);
+    margin-bottom: 14px;
+}
+.gap-card p { color: var(--muted); line-height: 1.65; }
+
+/* How the 12 weeks work */
+.how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.how-step { background-color: var(--cream); border-radius: 12px; padding: 32px 28px; }
+.how-number {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 2rem;
+    color: var(--coral);
+    margin-bottom: 12px;
+}
+.how-step h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    color: var(--teal);
+    font-size: 1.45rem;
+    margin-bottom: 12px;
+}
+.how-step p { color: var(--muted); line-height: 1.65; }
+.how-note { margin-top: 36px; font-size: 1.05rem; color: var(--ink); }
+.how-note strong { color: var(--teal); font-weight: 600; }
+.section-cta { margin-top: 32px; }
+
+/* Modern life — closing line */
+.approach-close {
+    text-align: center;
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    color: var(--teal);
+    margin-top: 8px;
+}
+
+/* Meet Berenice — split panel */
+.coach-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--forest);
+    flex: none;
+}
+.coach-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 760px;
+    object-fit: cover;
+    object-position: center 25%;
+}
+.coach-text {
+    padding: 88px 8% 88px 72px;
+    align-self: center;
+    max-width: 640px;
+}
+.coach-text h2 { color: var(--cream); }
+.coach-text p { color: rgba(248, 244, 238, 0.88); font-size: 1.1rem; line-height: 1.7; margin-bottom: 18px; }
+.coach-text .coach-location {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--soft-coral);
+    margin: 28px 0 32px;
+}
+.btn-light { background-color: var(--cream); color: var(--forest); }
+.btn-light:hover { background-color: var(--sand); }
+
+/* Testimonial */
+.testimonial p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+    line-height: 1.35;
+    color: var(--teal);
+    margin-bottom: 20px;
+}
+.testimonial footer { font-size: 0.9rem; color: var(--muted); letter-spacing: 0.04em; }
+
+/* Founding offer */
+.offer-card {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 56px;
+    align-items: center;
+    background-color: var(--sand);
+    border-radius: 12px;
+    padding: 56px;
+}
+.offer-text p { color: var(--ink); font-size: 1.1rem; line-height: 1.7; margin-bottom: 14px; }
+.offer-text p.eyebrow { font-size: 0.8rem; margin-bottom: 18px; color: var(--terracotta); }
+.offer-price {
+    background-color: var(--cream);
+    border-radius: 12px;
+    padding: 40px 32px;
+    text-align: center;
+}
+.price-label { font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--terracotta); font-weight: 500; }
+.price { font-family: var(--serif); font-size: 3.4rem; color: var(--teal); line-height: 1.1; margin: 8px 0; }
+.price-note { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+.offer-price .btn { display: block; width: 100%; }
+.text-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--terracotta);
+    font-size: 0.95rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.home-sand .btn-secondary { background-color: var(--cream); }
+.home-sand .btn-secondary:hover { background-color: #fff; filter: none; }
+.approach-section { background-color: var(--cream); }
+.approach-card, .approach-card:hover { background-color: var(--sand); }
+.section-head { max-width: 800px; }
+
+/* Closing */
+.home-closing .lead { margin-bottom: 32px; color: var(--muted); }
+.hero-buttons.centred { justify-content: center; }
+
+@media (max-width: 900px) {
+    .gap-grid, .how-grid { grid-template-columns: 1fr; }
+    .coach-panel { grid-template-columns: 1fr; }
+    .coach-photo img { max-height: 520px; }
+    .coach-text { padding: 56px 24px 64px; }
+    .offer-card { grid-template-columns: 1fr; gap: 32px; padding: 32px 22px; }
+}
+@media (max-width: 768px) {
+    .home-section { padding: 64px 20px; }
+    .hero-content h1 { font-size: 2.4rem; }
+    .section-head { margin-bottom: 32px; }
+}
+.coach-text p.eyebrow-dark { color: var(--soft-coral); font-size: 0.8rem; line-height: 1.2; margin-bottom: 18px; }
