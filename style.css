@@ -3190,3 +3190,11 @@ a.contact-row.primary:hover { background-color: var(--teal); }
     .hero-content h1, .hero-content h2, .hero-content p, .btn, .approach-card, .approach-icon, .approach-title, .pillar, .principle, .about-wrapper, .about-title, .about-image, .about-content, .coach-name, .program-title, .program-content, .program-image, .included-title, .included-list li, .faq-title, .faq-container, .faq-item, .who-title, .who-intro, .philosophy-title, .philosophy-content, .why-title, .why-description, .why-highlight, .apply-title, .apply-content, .google-form-container, .contact-title, .contact-card,
     .hero-image, .section-head, .gap-card, .how-step, .fit-card, .inc-card, .offer-text, .offer-price, .coach-photo, .coach-text, .story-head, .story-text, .faith-line, .approach-close, .testimonial, .how-note, .section-cta, .home-closing .home-inner, .page-head .home-inner, .faq-group, .contact-row, .contact-hours, .legal-text { opacity: 1 !important; transform: none !important; }
 }
+
+/* ===== Launch update 6 Oct 2026 (v=6) ===== */
+/* Longer testimonial: a little smaller so it reads well on a phone */
+.testimonial.long p { font-size: clamp(1.2rem, 2.1vw, 1.55rem); line-height: 1.5; }
+.testimonial.long p.testimonial-note, .testimonial p.testimonial-note { font-family: var(--sans); font-style: normal; font-size: 0.85rem; color: var(--muted); margin: 10px 0 0; line-height: 1.5; }
+/* Program: maintenance cards on a cream section */
+.fit-card.on-sand-card { background-color: var(--sand); }
+.fit-card.on-sand-card p { color: var(--muted); line-height: 1.65; }
