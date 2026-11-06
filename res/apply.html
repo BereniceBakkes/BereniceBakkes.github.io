@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | The Second Half Project</title>
+    <meta name="description" content="Apply for a founding spot in the 8-week 1:1 coaching program. It takes about 10 minutes and doesn't commit you to anything.">
+    <meta property="og:title" content="Apply | The Second Half Project">
+    <meta property="og:description" content="Apply for a founding spot in the 8-week 1:1 coaching program.">
+    <meta property="og:image" content="https://secondhalfproject.co.za/res/hero-berenice.jpg">
+    <link rel="preload" href="style.css?v=6" as="style">
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="icon" type="image/png" href="res/TSHP Logo Tab_circle.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="res/TSHP Logo.png" alt="Second Half Project Logo" width="150" height="150">
+                </a>
+            </div>
+            <div class="nav-mobile-right">
+                <span class="current-page" id="currentPage">Apply</span>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="program.html" class="nav-link">The Program</a>
+                <a href="apply.html" class="nav-link active">Apply</a>
+                <a href="faq.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Apply Section -->
+    <section class="apply-section">
+        <div class="container">
+            <p class="eyebrow centred-eyebrow">Apply</p>
+            <h1 class="apply-title">Apply for a <em>founding spot.</em></h1>
+
+            <div class="apply-content">
+                <p class="apply-intro">This application helps me understand where you are, what you've tried and what you'd like to change. It takes about 10 minutes.</p>
+
+                <p class="apply-tagline">Applying doesn't commit you to anything. I read every application personally. Intakes start in January 2027, and you're welcome to apply now. If you'd like to start sooner, we'll talk about it on our call.</p>
+
+                <div class="form-container">
+                    <!-- Progress Tracker -->
+                    <div class="progress-tracker">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+                        <div class="progress-steps">
+                            <div class="step active" id="step-1" onclick="goToPage(1)">
+                                <span class="step-number">1</span>
+                                <span class="step-label">Personal</span>
+                            </div>
+                            <div class="step" id="step-2" onclick="goToPage(2)">
+                                <span class="step-number">2</span>
+                                <span class="step-label">Goals</span>
+                            </div>
+                            <div class="step" id="step-3" onclick="goToPage(3)">
+                                <span class="step-number">3</span>
+                                <span class="step-label">Background</span>
+                            </div>
+                            <div class="step" id="step-4" onclick="goToPage(4)">
+                                <span class="step-number">4</span>
+                                <span class="step-label">Commitment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multi-page Form -->
+                    <form id="customForm" class="custom-form">
+                        <!-- Page 1: Personal Information -->
+                        <div class="form-page active" id="page-1">
+                            <h2>Personal Information</h2>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fullName">Full Name and Surname *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactNumber">Contact Number (WhatsApp) *</label>
+                                <input type="tel" id="contactNumber" name="contactNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth *</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                            </div>
+                        </div>
+
+                        <!-- Page 2: Goals -->
+                        <div class="form-page" id="page-2">
+                            <h2>Goals</h2>
+
+                            <div class="form-group">
+                                <label>What are your main health/body goals right now? *</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="loseWeight" name="goals" value="Lose weight">
+                                        <label for="loseWeight">Lose weight</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="bodyComposition" name="goals" value="Improve body composition">
+                                        <label for="bodyComposition">Improve body composition</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="energy" name="goals" value="Stabilize energy levels">
+                                        <label for="energy">Stabilize energy levels</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="inflammation" name="goals" value="Reduce inflammation">
+                                        <label for="inflammation">Reduce inflammation</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="mentalClarity" name="goals" value="Enhance mental clarity">
+                                        <label for="mentalClarity">Enhance mental clarity</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="cravings" name="goals" value="Reduce cravings">
+                                        <label for="cravings">Reduce cravings</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="overallHealth" name="goals" value="Improve overall health">
+                                        <label for="overallHealth">Improve overall health</label>
+                                    </div>
+                                    <div class="checkbox-option">
+                                        <input type="checkbox" id="goalsOther" name="goals" value="Other">
+                                        <label for="goalsOther">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="challenges">What are the biggest health/body challenges you are currently facing? *</label>
+                                <textarea id="challenges" name="challenges" rows="4" placeholder="Your answer..." required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Page 3: Background -->
+                        <div class="form-page" id="page-3">
+                            <h2>Background</h2>
+
+                            <div class="form-group">
+                                <label>Have you tried improving your health or losing weight before? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="manyTimes" name="previousAttempts" value="Yes, many times" required>
+                                        <label for="manyTimes">Yes, many times</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="fewTimes" name="previousAttempts" value="Yes, a few times" required>
+                                        <label for="fewTimes">Yes, a few times</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="firstAttempt" name="previousAttempts" value="No, this would be my first serious attempt" required>
+                                        <label for="firstAttempt">No, this would be my first serious attempt</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="triedBefore">If yes, what have you tried?</label>
+                                <textarea id="triedBefore" name="triedBefore" rows="4" placeholder="Your answer..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="diet">Are you currently following any specific diet? Please specify. *</label>
+                                <input type="text" id="diet" name="diet" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are you currently diagnosed with any medical conditions? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="medYes" name="medicalConditions" value="Yes" required>
+                                        <label for="medYes">Yes</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="medNo" name="medicalConditions" value="No" required>
+                                        <label for="medNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="medicalSpecify">Please specify.</label>
+                                <input type="text" id="medicalSpecify" name="medicalSpecify">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are you currently taking prescription medication? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="medRxYes" name="prescriptionMeds" value="Yes" required>
+                                        <label for="medRxYes">Yes</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="medRxNo" name="prescriptionMeds" value="No" required>
+                                        <label for="medRxNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="medRxSpecify">Please specify.</label>
+                                <input type="text" id="medRxSpecify" name="medRxSpecify">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are you currently taking any supplements? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="suppYes" name="supplements" value="Yes" required>
+                                        <label for="suppYes">Yes</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="suppNo" name="supplements" value="No" required>
+                                        <label for="suppNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="supplementsList">Please list all.</label>
+                                <textarea id="supplementsList" name="supplementsList" rows="4" placeholder="Your answer..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Do you have any known allergies or food intolerances? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="allergyYes" name="allergies" value="Yes" required>
+                                        <label for="allergyYes">Yes</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="allergyNo" name="allergies" value="No" required>
+                                        <label for="allergyNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="allergySpecify">Please specify.</label>
+                                <input type="text" id="allergySpecify" name="allergySpecify">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Have you had recent bloodwork done? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="bloodworkYes" name="bloodwork" value="Yes" required>
+                                        <label for="bloodworkYes">Yes</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="bloodworkNo" name="bloodwork" value="No" required>
+                                        <label for="bloodworkNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>How would you rate your overall health right now? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="poor" name="healthRating" value="Poor" required>
+                                        <label for="poor">Poor</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="fair" name="healthRating" value="Fair" required>
+                                        <label for="fair">Fair</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="good" name="healthRating" value="Good" required>
+                                        <label for="good">Good</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="veryGood" name="healthRating" value="Very Good" required>
+                                        <label for="veryGood">Very Good</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="excellent" name="healthRating" value="Excellent" required>
+                                        <label for="excellent">Excellent</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="notSure" name="healthRating" value="Not sure" required>
+                                        <label for="notSure">Not sure</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="currentWeight">Current weight (Optional)</label>
+                                <input type="text" id="currentWeight" name="currentWeight">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="height">Height (Optional)</label>
+                                <input type="text" id="height" name="height">
+                            </div>
+                        </div>
+
+                        <!-- Page 4: Commitment -->
+                        <div class="form-page" id="page-4">
+                            <h2>Commitment</h2>
+
+                            <div class="form-group">
+                                <label for="whyChange">Why do you want to make this change now? *</label>
+                                <textarea id="whyChange" name="whyChange" rows="4" placeholder="Your answer..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Are you willing to make meaningful lifestyle changes to improve your health? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="willingYes" name="lifestyleChanges" value="Yes" required>
+                                        <label for="willingYes">Yes</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="willingMaybe" name="lifestyleChanges" value="I'm open to it but unsure" required>
+                                        <label for="willingMaybe">I'm open to it but unsure</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="willingNo" name="lifestyleChanges" value="Not really" required>
+                                        <label for="willingNo">Not really</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="threeMonths">If this program is successful, what would your life look like in 3 months? What would have changed? *</label>
+                                <textarea id="threeMonths" name="threeMonths" rows="4" placeholder="Your answer..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>On a scale of 1-10, how ready are you to commit to lifestyle changes? *</label>
+                                <div class="scale-group">
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale1" name="readinessScale" value="1" required>
+                                        <label for="scale1">1</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale2" name="readinessScale" value="2" required>
+                                        <label for="scale2">2</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale3" name="readinessScale" value="3" required>
+                                        <label for="scale3">3</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale4" name="readinessScale" value="4" required>
+                                        <label for="scale4">4</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale5" name="readinessScale" value="5" required>
+                                        <label for="scale5">5</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale6" name="readinessScale" value="6" required>
+                                        <label for="scale6">6</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale7" name="readinessScale" value="7" required>
+                                        <label for="scale7">7</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale8" name="readinessScale" value="8" required>
+                                        <label for="scale8">8</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale9" name="readinessScale" value="9" required>
+                                        <label for="scale9">9</label>
+                                    </div>
+                                    <div class="scale-option">
+                                        <input type="radio" id="scale10" name="readinessScale" value="10" required>
+                                        <label for="scale10">10</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="anythingElse">Is there anything else you'd like to add or mention?</label>
+                                <textarea id="anythingElse" name="anythingElse" rows="4" placeholder="Your answer..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="disclaimer-label"><strong>Health disclaimer</strong></label>
+                                <p class="disclaimer-text">By submitting this application, I acknowledge that The Second Half Project is a health coaching service and does not replace medical advice, diagnosis, or treatment from a qualified healthcare professional. Any guidance provided is for educational and lifestyle-support purposes only. I understand that individual results may vary, that I am responsible for my own health choices, and that I should seek appropriate medical advice where needed. <a href="disclaimer.html" target="_blank" rel="noopener">Read the full health disclaimer</a>.</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Do you acknowledge and agree to the above disclaimer? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="disclaimerYes" name="disclaimer" value="Yes, I have read and understood the above disclaimer." required>
+                                        <label for="disclaimerYes">Yes, I have read and understood the above disclaimer.</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="disclaimer-label"><strong>Privacy consent</strong></label>
+                                <p class="disclaimer-text">I consent to The Second Half Project (Berenice Bakkes) collecting and using the personal and health information in this application to assess whether the program is right for me and to contact me about it, as set out in the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>. I can withdraw my consent at any time.</p>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Do you consent to the above? *</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="privacyYes" name="privacyConsent" value="Yes, I consent." required>
+                                        <label for="privacyYes">Yes, I consent.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-secondary" id="prevBtn" onclick="previousPage()">← Previous</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPage()">Next →</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">Submit application</button>
+                        </div>
+                    </form>
+
+                    <!-- Hidden form to submit to Google Forms (Main Form) -->
+                    <form id="googleFormSubmit" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdHhfg73LRpx8OR0kXLFtawCSfBRHEc7cBJQOLy2wjm5SmC0g/formResponse" style="display: none;">
+                        <!-- Page 1 Fields -->
+                        <input type="hidden" name="emailAddress" id="gf-email">
+                        <input type="hidden" name="entry.569054967" id="gf-fullName">
+                        <input type="hidden" name="entry.1390730019" id="gf-contactNumber">
+                        <input type="hidden" name="entry.1091406177" id="gf-dateOfBirth">
+                        <input type="hidden" name="entry.1081316312" id="gf-gender">
+
+                        <!-- Page 2 Fields -->
+                        <input type="hidden" name="entry.453925915" id="gf-goals">
+                        <input type="hidden" name="entry.303490720" id="gf-challenges">
+
+                        <!-- Page 3 Fields -->
+                        <input type="hidden" name="entry.1778146938" id="gf-previousAttempts">
+                        <input type="hidden" name="entry.1282701131" id="gf-triedBefore">
+                        <input type="hidden" name="entry.1904904898" id="gf-diet">
+                        <input type="hidden" name="entry.59218978" id="gf-medicalConditions">
+                        <input type="hidden" name="entry.853010451" id="gf-medicalSpecify">
+                        <input type="hidden" name="entry.2117106748" id="gf-prescriptionMeds">
+                        <input type="hidden" name="entry.140953979" id="gf-medRxSpecify">
+                        <input type="hidden" name="entry.897309947" id="gf-supplements">
+                        <input type="hidden" name="entry.793487963" id="gf-supplementsList">
+                        <input type="hidden" name="entry.1282300603" id="gf-allergies">
+                        <input type="hidden" name="entry.1184648343" id="gf-allergySpecify">
+                        <input type="hidden" name="entry.412990079" id="gf-bloodwork">
+                        <input type="hidden" name="entry.441328348" id="gf-healthRating">
+                        <input type="hidden" name="entry.263517772" id="gf-currentWeight">
+                        <input type="hidden" name="entry.1896424265" id="gf-height">
+
+                        <!-- Page 4 Fields -->
+                        <input type="hidden" name="entry.875607148" id="gf-whyChange">
+                        <input type="hidden" name="entry.1113720368" id="gf-lifestyleChanges">
+                        <input type="hidden" name="entry.1540798030" id="gf-threeMonths">
+                        <input type="hidden" name="entry.1758599209" id="gf-readinessScale">
+                        <input type="hidden" name="entry.1371058970" id="gf-anythingElse">
+                        <input type="hidden" name="entry.285206051" id="gf-disclaimer">
+                    </form>
+
+                    <!-- Backup hidden form to submit to Google Forms (Email, Name & Contact Number) -->
+                    <form id="googleFormBackupSubmit" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdDaaJMHSHnGsIMFzrlc4si2QFuGraIBZsXkHKgThe21sb9Kg/formResponse" style="display: none;">
+                        <input type="hidden" name="entry.1783116103" id="bf-email">
+                        <input type="hidden" name="entry.1844385860" id="bf-fullName">
+                        <input type="hidden" name="entry.1956881663" id="bf-contactNumber">
+                    </form>
+                </div>
+
+                <div class="apply-info">
+                    <p>I work closely with each client, so spaces are limited.</p>
+
+                    <p>Once you've applied, I'll contact you personally to set up a short call.</p>
+
+                    <p>Prefer to chat first? <a href="https://wa.me/27679783522?text=Hi%20Berenice%2C%20I%27d%20like%20to%20know%20more%20about%20the%208-week%20program." target="_blank" rel="noopener">WhatsApp me</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="res/TSHP Logo.png" alt="The Second Half Project" width="900" height="218">
+                    </a>
+                </div>
+                <a href="tel:+27679783522" class="footer-icon-link" title="Call" aria-label="Call">
+                    <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                </a>
+                <a href="mailto:info@secondhalfproject.co.za" class="footer-icon-link" title="Email" aria-label="Email">
+                    <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </a>
+                <a href="https://facebook.com/secondhalfproject" class="footer-icon-link" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+                    <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/the_secondhalf_project" class="footer-icon-link" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                        <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z" fill="none" stroke="currentColor" stroke-width="2"></path>
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"></circle>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/berenicebakkes" class="footer-icon-link" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path>
+                    </svg>
+                </a>
+                <a href="https://wa.me/27679783522" class="footer-icon-link" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+                    <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.148.549 4.177 1.518 5.928L0 24l6.304-1.465A11.97 11.97 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.96c-1.969 0-3.897-.489-5.565-1.427l-.399-.235-4.141.964.984-3.585-.245-.391C1.466 15.883 1.04 14.012 1.04 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.441-7.504c-.295-.147-1.745-.862-2.016-.96-.27-.099-.468-.147-.667.147-.198.294-.768.96-.941 1.159-.173.199-.347.223-.644.075-.296-.148-1.254-.462-2.389-1.475-.883-.788-1.48-1.76-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.148-.174.198-.298.298-.496.099-.198.049-.371-.025-.52-.075-.148-.667-1.611-.916-2.206-.242-.579-.487-.5-.667-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.271.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.569-.347z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <p class="footer-line"><em>The choices you make today will shape the Second Half of your life.</em></p>
+            <div class="footer-bottom">
+                <p class="footer-legal"><a href="privacy.html">Privacy policy</a> · <a href="disclaimer.html">Health disclaimer</a> · <a href="faq.html">FAQs</a></p>
+                <p>&copy; 2026 The Second Half Project</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js?v=3" defer></script>
+</body>
+</html>
