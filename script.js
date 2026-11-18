@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Multi-page Form Handler
 let currentPage = 1;
-const totalPages = 4;
+const totalPages = 3;
 let isInitialLoad = true;
 
 function showPage(pageNum, shouldScroll = false) {
